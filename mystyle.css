@@ -16,28 +16,38 @@ body {
   background: url(images/vichy.png), linear-gradient(to bottom right, #ffe7dd, #c57373 98%)
   /* background-image: linear-gradient(to bottom right, #ffe7dd, #c57373 98%); */
   }
-  
+
   h1 {
     font-family: 'Chakra Petch', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(133, 74, 80);
+    font-size: 40px;
     text-align: center;
+    margin-bottom: 0px;
   }
 
   h2{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 30px;
-    color: black;
+    color: rgb(197, 98, 106);
     padding-top: 30px;
   }
 
   h3 {
     font-family: 'Roboto Mono';
-    color: rgb(0, 0, 0);
+    color: rgb(133, 74, 80);
     text-align: center;
   }
-    
+  
+  ul { 
+    text-align: left;
+    justify-content: space-evenly;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+    color: rgb(88, 48, 48);
+    padding-top: 10px;
+  }
   p {
-    font-family: 'Roboto Mono';
+    font-family: 'MS Gothic';
     font-size: 20px;
     text-align:center
   }
@@ -76,7 +86,7 @@ body {
     font-size: large;
   }
   .flex_container {
-    background-image: linear-gradient(rgb(253, 248, 247), rgba(248, 234, 232, 0) 99%);
+    background-image: linear-gradient(rgb(253, 248, 247), rgba(248, 234, 232, 0.567) 99%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -96,7 +106,7 @@ body {
     vertical-align: middle;
     display: table-cell;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
   }
   nav a:hover {
     background-color: #cd6464;
@@ -193,13 +203,13 @@ body {
 }
 
 .logo_caden {
-  width: 35px;
+  width: 45px;
   display: inline-block;
   align-self: start;
 }
 
 .logo_caden_banner {
-  width: 100px;
+  width: 125px;
   display: inline-block;
   align-self: start;
 }
@@ -233,7 +243,7 @@ body {
   row-gap: 40px;
   grid-template-areas:
     "photos photos"
-    "box1 box2"
+    " box1 box2"
 }
 
 @media (min-width: 600px) {
@@ -282,7 +292,7 @@ body {
 .box1 > h3{
   color: rgb(197, 98, 106);
 }
-.box2 > h1 {
+.box2wrapper > h1 {
   font-family: 'Chakra Petch', sans-serif;
   color: rgb(197, 98, 106);
   font-size: 25px;
@@ -290,11 +300,11 @@ body {
   margin-bottom: 0px;
 }
 
-.box2 > h3, a{
+.box2wrapper > h3, a{
   color: rgb(197, 98, 106);
   font-family: 'Roboto Mono';
   font-style: normal;
-  text-align:center;
+  text-align: left;
   font-size: 20px;
   font-weight: bold;
 }
@@ -307,15 +317,22 @@ body {
 }
 .box2 {
   grid-area: box2;
-  text-align: center;
+  text-align: left;
   padding-bottom: 20%;
   border-radius: 10px;
   background-color: #fff0f0de;
   box-shadow: 0px 8px 16px 0px rgba(237, 195, 195, 0.6);
   grid-column-start: 2
 }
-.box2 > a{
+.box2 a, .box2wrapper a{
   line-height: 1.5;
+  text-align: left;
+}
+
+.box2wrapper {
+  width: 80%;
+  margin: auto;
+  text-align: left;
 }
 
 
@@ -671,7 +688,7 @@ body {
   text-decoration: none;
   display: block;
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* Add a grey background color to dropdown links on hover */
@@ -686,7 +703,7 @@ body {
 }
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 18px;
+  font-size: 25px;
   border: none;
   outline: none;
   vertical-align: middle;
@@ -1186,7 +1203,7 @@ img {vertical-align: middle;}
   padding: 10px;
   margin-top: 10px;
 }
-.heuristic_eval img, .typeform_intro img, .goals img, .analysis img, .recommendations img {
+.heuristic_eval img, .typeform_intro img, .goals img, .analysis img, .recommendations img, .uisprint1 img{
   max-width: 80%;
   border-radius: 10px;
   border:#d57293 solid;
@@ -1262,7 +1279,7 @@ img {vertical-align: middle;}
       display: grid;
       flex-direction: row;
       justify-items: center;
-      width: 60%;
+      width: 80%;
       margin: 0 auto;
     }
 }
@@ -1272,4 +1289,55 @@ img {vertical-align: middle;}
     word-wrap: break-word;
     width: 70%;
  }
+}
+
+.designpage {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: #d899ae solid;
+  width: 80%;
+  margin-top: 50px;
+  background-color: #f8e4e499;
+}
+
+.designpage p {
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.uisprintwrapper {
+  padding-top: 50px;
+  display: grid;
+  flex-direction: row;
+  justify-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.uisprint {
+  display: grid;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin-left: -30px;
+  margin-bottom: auto;
+  padding-bottom: 20px;
+  row-gap: 40px;
+  grid-template-areas:
+  "aboutui"
+  ;
+}
+
+.aboutui, .uisprint1 {
+  background-color: #f8e4e499;
+  border: #d899ae solid;
+  border-radius: 15px;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
 }

@@ -303,11 +303,13 @@ a {
     flex-wrap: wrap;
     gap: 20px;
     row-gap: 0px;
+    justify-content: center;
 }
 
 .small {
-    max-width: 45%;
+    max-width: 50%;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 1024px) {

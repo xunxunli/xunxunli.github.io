@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Project - Caden's Portfolio</title>
+    <link rel="shortcut icon" href="images/caden_icon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="social-icons">
+            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <img src="images/Untitled-1.gif">
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+    <div class="desktop-container">
+        <div class="desktop">
+            <!-- Left Section -->
+            <div class="left">
+                <div class="window">
+                    <div class="title-bar">
+                        <span><i class="fa-solid fa-magnifying-glass"></i> Project Overview</span>
+                        <div class="window-buttons">
+                            <span class="minimize">🗕</span>
+                            <span class="exclose">✖</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p><strong>Project Name:</strong> UI Sprints</p>
+                        <p><strong>Role:</strong> UI/UX Designer</p>
+                        <p><strong>Duration:</strong> Ongoing</p>
+                        <p><strong>Tools Used:</strong> Figma, Adobe XD, Sketch</p>
+                        <p><strong>Description:</strong> UI Sprints are fast-paced design challenges aimed at developing design skills and practicing new techniques. These sprints provide opportunities to experiment, receive feedback, and improve as a designer.</p>
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="title-bar">
+                        <span><i class="fa-solid fa-star"></i> Key Features</span>
+                        <div class="window-buttons">
+                            <span class="minimize">🗕</span>
+                            <span class="exclose">✖</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <!-- Key Features for Sprint 1 -->
+                        <div id="key-features1" class="key-features active">
+                            <ul>
+                                <li>Fast-paced design challenges</li>
+                                <li>Focus on skill development and experimentation</li>
+                                <li>Opportunities for constructive feedback</li>
+                                <li>Practice with modern design tools</li>
+                            </ul>
+                        </div>
+                
+                        <!-- Key Features for Sprint 2 -->
+                        <div id="key-features2" class="key-features" style="display: none;">
+                            <ul>
+                                <li>Design a 404 error page for a chosen organization</li>
+                                <li>Focus on UX writing and tone</li>
+                                <li>Create a style guide for consistency</li>
+                                <li>Design for both desktop and mobile</li>
+                            </ul>
+                        </div>
+                
+                        <!-- Key Features for Sprint 3 -->
+                        <div id="key-features3" class="key-features" style="display: none;">
+                            <ul>
+                                <li>Design a toggle switch component</li>
+                                <li>Focus on usability and accessibility</li>
+                                <li>Experiment with different toggle styles</li>
+                                <li>Test the toggle in different contexts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="middle">
+                <div class="window">
+                    <div class="title-bar">
+                        <span><i class="fa-solid fa-house"></i> Site Navigation</span>
+                        <div class="window-buttons">
+                            <span class="minimize">🗕</span>
+                            <span class="exclose">✖</span>
+                        </div>
+                    </div>
+                    <nav class="navbar">
+                        <a href="index.html">Home</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="design.html">Graphic Design</a>
+                        <a href="uisprints.html">UI Sprints</a>
+                        <a href="usability_test.html">Usability Projects</a>
+                    </nav>
+                </div>
+                <div class="window">
+                    <div class="title-bar">
+                        <span><i class="fa-solid fa-paperclip"></i> UI Sprint Selector</span>
+                        <div class="window-buttons">
+                            <span class="minimize">🗕</span>
+                            <span class="exclose">✖</span>
+                        </div>
+                    </div>
+                    <nav class="mininavbar">
+                        <a id="sprint1">Democrat and Rochester</a>
+                        <a id="sprint2">Animal Crossing Error 404 Page</a>
+                        <a id="sprint3">Toggle Design</a>
+                    </nav>
+                </div>
+                <div class="window long">
+                    <div class="title-bar">
+                        <span><i class="fa-solid fa-pen-nib"></i> Sprint Content</span>
+                        <div class="window-buttons">
+                            <span class="minimize">🗕</span>
+                            <span class="exclose">✖</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <!-- Content for Democrat and Rochester -->
+                        <div id="content1" class="sprint-content active">
+                            <img src="images/dc_reframe.png" alt="Redesign" class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <h3>SPRINT #1: Democrat and Rochester Mobile Redesign</h3>
+                            <p>In this UI sprint, students were tasked with redesigning a webpage for a photography collection released by Democrat and Chronicle. The goal was to create a mobile-friendly design that better catered to users and aligned with the brand's image.</p>
+                            <h3>Original Design by D&C:</h3>
+                            <img src="images/dc_og.png" alt="Original Design" class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <h3>Problems with the Original Design:</h3>
+                            <ul>
+                                <li>Harshly contrasting font sizes make it hard to read.</li>
+                                <li>Colored text is difficult to read.</li>
+                                <li>Lacks alignment with Democrat and Chronicle's brand styling.</li>
+                                <li>No photos are included, despite being a photography collection.</li>
+                            </ul>
+                            <h3>Democrat & Chronicle's Current Website for Style Reference:</h3>
+                            <img src="images/dc_brand.png" alt="Brand Reference" class="lightbox-trigger" style="width:60%; margin-bottom: 10px;">
+                            <ul>
+                                <li>Uses blue accent colors.</li>
+                                <li>Features Helvetica Neue and PT Serif fonts.</li>
+                                <li>Modern and clean design.</li>
+                            </ul>
+                            <h3>My Redesign for Mobile Screens:</h3>
+                            <img src="images/dc_reframe.png" alt="Redesign" class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <ul>
+                                <li>Utilizes blue accents from the D&C logo.</li>
+                                <li>Modern design with Helvetica Neue, PT Serif, and an accent font.</li>
+                                <li>Focuses on photography with a clear call-to-action button.</li>
+                            </ul>
+                            <h3>Preliminary Sketches and Wireframes:</h3>
+                            <img src="images/dc_sketch.png" alt="Sketches" class="lightbox-trigger" style="width:32%; margin-bottom: 10px;">
+                            <img src="images/dc_wireframe.png" alt="Wireframes" class="lightbox-trigger" style="width:36%; margin-bottom: 10px;">
+                        </div>
+
+                        <!-- Content for Animal Crossing Error 404 Page -->
+                        <div id="content2" class="sprint-content" style="display: none;">
+                            <img src="images/acnh_desktop.png" alt="Animal crossing error 404 page with Redd the fox and a sign that says 404." class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <h3>SPRINT #2: Animal Crossing Error 404 Page</h3>
+                            <p>In this UI sprint, students were asked to design a 404 error page for an organization of their choice in both desktop and mobile forms.<br><br>This assignment has an emphasis on UX writing, focusing on how a 404 screen can reflect an organization's personality and tone.</p>
+                            <h3>Animal Crossing New Horizons Site Page</h3>
+                            <img src="images/acnh_site.png" alt="Animal Crossing Website" class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <p>Since this sprint allowed me to take a look at any organization of my choice, I decided to take a look at the Animal Crossing New Horizons site because I have such fond memories of the game style.</p>
+                            <h3>Creating a Style Guide</h3>
+                            <img src="images/acnh_inspo.png" alt="Style guide with tom nook, animal crossing fonts, redd, a tent with error 404 sign in front." class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <p>Based on the current website, I started developing an inspiration board of elements that are important to the branding of the organization. This included finding the fonts that are used, UI element styles, and also generating some ideas of my own.</p>
+                            <p>I thought about having a mascot like Tom Nook on the 404 page, keeping the tone friendly and familiar to the target audience.</p>
+                            <p>In the end, I decided to go with Redd, the fox character in the bottom left corner. He symbolizes mischief in the Animal Crossing games, and he would be a thematically appropriate character to have on a 404 page.</p>
+                            <h3>Creating the Redd 404 Design</h3>
+                            <img src="images/acnh_graphic.png" alt="Redd the fox in front of his art tent with a wooden arrow sign that says 404." class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <p>Since there were no existing Animal Crossing 404 page assets, I took it into my own hands to create an original design in Procreate. I picked up a model of Redd, a model of his tent, and a model of an in-game sign and added the "404" text onto it. For the actual error 404 message, I modeled the dialogue box after the in-game UI to create a familiar look.</p>
+                            <h3>Error 404 Message: What to say?</h3>
+                            <p>At first look, an error 404 page seems like it should be simple. However, a lot of people fail to consider how an error 404 page content changes based on organization personality as well as the target audience's needs.</p>
+                            <p>Since the target audience of this organization is young kids, I decided to keep the error feedback short and sweet. I also made the 404 message tone playful, like it was Redd speaking to the user. This way, the user feels less frustrated and is guided by a familiar character.</p>
+                            <img src="images/acnh_desktop.png" alt="Animal crossing error 404 page with Redd the fox and a sign that says 404." class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <p>On the desktop version, I made a stylized button that prompts users to go back to the homepage.</p>
+                            <img src="images/acnh_mobile.png" alt="Mobile Animal crossing error 404 page with Redd the fox and a sign that says 404." class="lightbox-trigger" style="height: 400px; margin-bottom: 10px;">
+                            <p>On the mobile version, I created a button that is larger and easier for thumbs to tap with an icon indicating that it will send users to the homepage.</p>
+                            <h3>Reflection</h3>
+                            <p>Overall, I feel like I learned a lot about tone and UX writing through this sprint. It helped me to think more about text content and how it too can be branded, similar to graphic designs.</p>
+                        </div>
+
+                        <!-- Content for Toggle Design -->
+                        <div id="content3" class="sprint-content" style="display: none;">
+                            <img src="images/toggle_switch.png" alt="Toggle Design" class="lightbox-trigger" style="width:50%; margin-bottom: 10px;">
+                            <h3>SPRINT #3: Toggle Design - Day/Night Mode Switch</h3>
+                            <p>In this UI sprint, I was tasked with designing a toggle switch that turns something on and off. I decided to create a day/night mode toggle for an online shopping website, inspired by my mom's experience shopping at night. The goal was to design a user-friendly toggle that allows users to switch between day and night modes seamlessly, reducing eye strain during nighttime browsing.</p>
+                            <h3>Project Brief</h3>
+                            <p>The target audience for this project is online shoppers, particularly those who shop at night. Many users, like my mom, find it straining to browse brightly lit websites in the dark. This toggle switch allows users to switch to a darker theme, making the shopping experience more comfortable during nighttime.</p>
+                            <img src="images/toggle_sketch.png" alt="rough sketch of sun slider becoming moon slider" class="lightbox-trigger" style="width:50%; margin-bottom: 10px;">
+                            <h3>Design Process</h3>
+                            <p>I started by sketching out ideas for the toggle switch, focusing on intuitive icons (sun and moon) and a classic toggle layout. The toggle is placed in the navbar for easy access, and I made sure it was large enough to be noticeable and easy to use.</p>
+                            <img src="images/toggle_wireframe.png" alt="wireframe of sun slider becoming moon slider, light colored page turns dark colored" class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <img src="images/toggle_proto.png" alt="wireframe of sun slider becoming moon slider, light colored page turns dark colored" class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
+                            <h3>Wireframes and Prototypes</h3>
+                            <p>I created a medium fidelity mockup to demonstrate how my button works.</p>
+
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li><strong>Intuitive Icons:</strong> The toggle uses sun and moon icons to clearly indicate the current mode (day or night).</li>
+                                <li><strong>Accessible Placement:</strong> The toggle is placed in the navbar, making it easily accessible from any page.</li>
+                                <li><strong>Animation:</strong> The toggle includes smooth animations to enhance the user experience.</li>
+                                <li><strong>User-Friendly Design:</strong> The toggle is large and easy to click, ensuring usability on both desktop and mobile devices.</li>
+                            </ul>
+
+                            <h3>Reflection</h3>
+                            <p>This project was a great learning experience. I enjoyed experimenting with different color schemes for the day and night modes and exploring Figma's animation features. One of the challenges I faced was deciding on the default state of the toggle and how to clearly indicate the current mode to the user. In future sprints, I hope to continue improving my skills in Figma animations and explore more advanced interaction design techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right">
+                <div class="window">
+                    <div class="title-bar">
+                        <span><i class="fa-solid fa-comment"></i> User Feedback</span>
+                        <div class="window-buttons">
+                            <span class="minimize">🗕</span>
+                            <span class="exclose">✖</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <!-- User Feedback for Sprint 1 -->
+                        <div id="user-feedback1" class="user-feedback active">
+                            <p><strong>Positive Feedback:</strong></p>
+                            <ul>
+                                <li>"The redesign is modern and aligns well with the brand."</li>
+                                <li>"The focus on photography is a significant improvement."</li>
+                            </ul>
+                            <p><strong>Areas for Improvement:</strong></p>
+                            <ul>
+                                <li>"Consider adding more whitespace for better readability."</li>
+                                <li>"Experiment with different call-to-action button placements."</li>
+                            </ul>
+                        </div>
+                
+                        <!-- User Feedback for Sprint 2 -->
+                        <div id="user-feedback2" class="user-feedback" style="display: none;">
+                            <p><strong>Positive Feedback:</strong></p>
+                            <ul>
+                                <li>"The 404 page design is creative and fits the Animal Crossing theme perfectly."</li>
+                                <li>"The use of Redd as a character adds a playful touch."</li>
+                            </ul>
+                            <p><strong>Areas for Improvement:</strong></p>
+                            <ul>
+                                <li>"Experiment with different font sizes for better readability on mobile."</li>
+                            </ul>
+                        </div>
+                
+                        <!-- User Feedback for Sprint 3 -->
+                        <div id="user-feedback3" class="user-feedback" style="display: none;">
+                            <p><strong>Positive Feedback:</strong></p>
+                            <ul>
+                                <li>"The toggle design is clean and intuitive."</li>
+                                <li>"The focus on accessibility is commendable."</li>
+                            </ul>
+                            <p><strong>Areas for Improvement:</strong></p>
+                            <ul>
+                                <li>"Consider adding more visual feedback when the toggle is activated."</li>
+                                <li>"Test the toggle in more diverse contexts to ensure usability."</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="title-bar">
+                        <span><i class="fa-solid fa-file"></i> Project Links</span>
+                        <div class="window-buttons">
+                            <span class="minimize">🗕</span>
+                            <span class="exclose">✖</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <!-- Project Links for Democrat and Rochester -->
+                        <div id="links1" class="sprint-links active">
+                            <p><a href="https://www.figma.com/proto/LA7bOPRtjNpBB3Vntt4suq/UI-Design-Sprint-%231?node-id=8112-253&p=f&t=DYjC7Vutqk0L9vag-1&scaling=scale-down&content-scaling=fixed&page-id=8112%3A252&starting-point-node-id=8112%3A253" target="_blank"><img src="images/figma.png" style="height:20px; border: 0px;"> View Figma Prototype</a></p>
+                        </div>
+
+                        <!-- Project Links for Animal Crossing Error 404 Page -->
+                        <div id="links2" class="sprint-links" style="display: none;">
+                            <p><a href="https://www.figma.com/proto/ha5OIs0uSXByk77vXUHLYo/Caden-Gregorio--UI-SPRINT-2?node-id=5-126&scaling=scale-down&content-scaling=fixed&t=KnxpHkHY3higGioK-1" target="_blank"><img src="images/figma.png" style="height:20px; border: 0px;"> View Figma Prototype</a></p>
+                        </div>
+
+                        <!-- Project Links for Toggle Design -->
+                        <div id="links3" class="sprint-links" style="display: none;">
+                            <p><a href="https://www.figma.com/proto/HT6G4oFuSbbNQYFj4pRNUa/caden_gregorio-ui-sprint-3?node-id=1-116&starting-point-node-id=1%3A116&scaling=scale-down&content-scaling=fixed" target="_blank"><img src="images/figma.png" style="height:20px; border: 0px;"> View Figma Prototype</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- JavaScript for Lightbox -->
+    <script>
+        // Get the lightbox and lightbox image elements
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox .close');
+
+        // Function to open the lightbox
+        function openLightbox(event) {
+            if (event.target.classList.contains('lightbox-trigger')) {
+                lightbox.style.display = 'block';
+                lightboxImg.src = event.target.src;
+            }
+        }
+
+        // Function to close the lightbox
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+        // Add event listeners to all images with the class 'lightbox-trigger'
+        document.querySelectorAll('.lightbox-trigger').forEach(img => {
+            img.addEventListener('click', openLightbox);
+        });
+
+        // Close lightbox when close button is clicked
+        closeBtn.addEventListener('click', closeLightbox);
+
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    </script>
+
+    <!-- JavaScript for Toggle Functionality -->
+    <script>
+       // Get all the buttons and content sections
+        const sprint1Button = document.getElementById('sprint1');
+        const sprint2Button = document.getElementById('sprint2');
+        const sprint3Button = document.getElementById('sprint3');
+
+        const content1 = document.getElementById('content1');
+        const content2 = document.getElementById('content2');
+        const content3 = document.getElementById('content3');
+
+        const links1 = document.getElementById('links1');
+        const links2 = document.getElementById('links2');
+        const links3 = document.getElementById('links3');
+
+        const keyFeatures1 = document.getElementById('key-features1');
+        const keyFeatures2 = document.getElementById('key-features2');
+        const keyFeatures3 = document.getElementById('key-features3');
+
+        const userFeedback1 = document.getElementById('user-feedback1');
+        const userFeedback2 = document.getElementById('user-feedback2');
+        const userFeedback3 = document.getElementById('user-feedback3');
+
+        // Function to hide all content sections
+        function hideAllContent() {
+            content1.style.display = 'none';
+            content2.style.display = 'none';
+            content3.style.display = 'none';
+            links1.style.display = 'none';
+            links2.style.display = 'none';
+            links3.style.display = 'none';
+            keyFeatures1.style.display = 'none';
+            keyFeatures2.style.display = 'none';
+            keyFeatures3.style.display = 'none';
+            userFeedback1.style.display = 'none';
+            userFeedback2.style.display = 'none';
+            userFeedback3.style.display = 'none';
+        }
+
+        // Function to remove the 'active' class from all buttons
+        function removeActiveClass() {
+            sprint1Button.classList.remove('active');
+            sprint2Button.classList.remove('active');
+            sprint3Button.classList.remove('active');
+        }
+
+        // Add event listeners to the buttons
+        sprint1Button.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            hideAllContent();
+            content1.style.display = 'block'; // Show content for Sprint 1
+            links1.style.display = 'block'; // Show links for Sprint 1
+            keyFeatures1.style.display = 'block'; // Show key features for Sprint 1
+            userFeedback1.style.display = 'block'; // Show user feedback for Sprint 1
+            removeActiveClass(); // Remove 'active' class from all buttons
+            sprint1Button.classList.add('active'); // Add 'active' class to the clicked button
+            console.log("Showing content1, links1, keyFeatures1, and userFeedback1"); // Debugging
+        });
+
+        sprint2Button.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            hideAllContent();
+            content2.style.display = 'block'; // Show content for Sprint 2
+            links2.style.display = 'block'; // Show links for Sprint 2
+            keyFeatures2.style.display = 'block'; // Show key features for Sprint 2
+            userFeedback2.style.display = 'block'; // Show user feedback for Sprint 2
+            removeActiveClass(); // Remove 'active' class from all buttons
+            sprint2Button.classList.add('active'); // Add 'active' class to the clicked button
+            console.log("Showing content2, links2, keyFeatures2, and userFeedback2"); // Debugging
+        });
+
+        sprint3Button.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            hideAllContent();
+            content3.style.display = 'block'; // Show content for Sprint 3
+            links3.style.display = 'block'; // Show links for Sprint 3
+            keyFeatures3.style.display = 'block'; // Show key features for Sprint 3
+            userFeedback3.style.display = 'block'; // Show user feedback for Sprint 3
+            removeActiveClass(); // Remove 'active' class from all buttons
+            sprint3Button.classList.add('active'); // Add 'active' class to the clicked button
+            console.log("Showing content3, links3, keyFeatures3, and userFeedback3"); // Debugging
+        });
+
+        // Show the first content section by default
+        content1.style.display = 'block';
+        links1.style.display = 'block';
+        keyFeatures1.style.display = 'block';
+        userFeedback1.style.display = 'block';
+        sprint1Button.classList.add('active'); // Add 'active' class to the first button by default
+    </script>
+    <script src="https://kit.fontawesome.com/cd7b4fc703.js" crossorigin="anonymous"></script>
+</body>
+</html>

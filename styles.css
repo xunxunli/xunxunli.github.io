@@ -1,0 +1,361 @@
+/* General Styles */
+body {
+    background-size: 70px;
+    background-image: url("images/wallpaper.png");
+    font-family: "MS UI Gothic", Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+i {
+    image-rendering: pixelated;
+}
+/* Header with Name & Socials */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+header img {
+    height: 90px;
+}
+
+@keyframes shine {
+    0% {
+        background-position: -100%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%;
+    }
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.social-icons a {
+    color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* Windows XP-Styled Windows */
+.window {
+    border: 3px solid #4932C9;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.long {
+    border: 3px solid #4932C9;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    white-space: normal;
+    height: 700px;
+}
+
+/* Title Bar */
+.title-bar {
+    background: #E2E2E2;
+    color: #4932C9;
+    padding: 3px;
+    padding-left: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1900bd;
+}
+
+/* Ensure the desktop container takes up the full width */
+.desktop-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 95%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* Make the desktop container a flexbox with equal growth for all sections */
+.desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Space between sections */
+    justify-content: center;
+    width: 100%; /* Ensure it takes up the full width */
+}
+
+/* Left Section */
+.left {
+    padding-top: 10px;
+    flex: 1; /* Allow it to grow */
+    max-width: 25%; /* Optional: Limit maximum width */
+}
+
+/* Middle Section */
+.middle {
+    flex: 2; /* Allow it to grow more than the left and right sections */
+    max-width: 50%; /* Optional: Limit maximum width */
+}
+
+/* Right Section */
+.right {
+    padding-top: 10px;
+    flex: 1; /* Allow it to grow */
+    width: 25%;
+    max-width: 25%; /* Optional: Limit maximum width */
+}
+
+/* Window Buttons */
+.window-buttons {
+    display: flex;
+}
+
+.minimize,
+.exclose {
+    background: #E2E2E2;
+    color: #4932C9;
+    padding: 2px 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #4932C9;
+}
+
+a {
+    color: #ba189a
+}
+/* Window Hover Effect */
+.window:hover {
+    border-color: blue;
+}
+
+.window:hover .title-bar {
+    background: #EDD0EE;
+}
+
+.window:hover .minimize {
+    background: #EDD0EE;
+}
+
+.window:hover .exclose {
+    background: #EDD0EE;
+}
+
+/* Window Content */
+.content {
+    padding: 15px;
+    background: #F9EFF9;
+    font-size: 1.1rem;
+    color: #4932C9;
+    overflow-y: auto;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* XP-Style Navbar */
+.navbar {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background: #F9EFF9;
+}
+
+.navbar a {
+    background: #F8E1FB;
+    padding: 5px 10px;
+    border: 2px solid #6a5acd;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.navbar a:hover {
+    background: #a8a8a8;
+}
+
+/* Additional Styles for UI/UX Project Page */
+.content img {
+    border: 2px solid #4932C9;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.content img:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.content a {
+    color: #a151d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(101, 50, 113, 0.435);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    min-width: 60%; /* Increased from 60% */
+    max-width: 90%; /* Increased from 80% */
+    object-fit: contain; /* Ensures the image scales properly without distortion */
+    max-height: 90%; /* Increased from 80% */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* mini Navbar */
+.mininavbar {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: #F9EFF9;
+}
+
+.mininavbar a {
+    background: #F8E1FB;
+    padding: 5px 10px;
+    border: 2px solid #7768dc;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.mininavbar a:hover {
+    background: #a8a8a8;
+}
+
+.mininavbar a.active {
+    background: #6f58f0;
+    color: white;
+}
+.sprint-content {
+    display: none; /* Hide all content sections by default */
+}
+
+.sprint-content.active {
+    display: block; /* Show the active content section */
+}
+
+.design-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 0px;
+}
+
+.small {
+    max-width: 45%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .desktop {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left, .middle, .right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .mininavbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+    }
+
+    .window {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}

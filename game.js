@@ -678,34 +678,54 @@ const gameState = {
 };
 // Initialize the game
 function initGame() {
-    unlockAudio();
-    
     // Set up click-to-begin
     const startScreen = document.getElementById('start-screen');
+    const gameContainer = document.getElementById('game-container');
+    
+    // Show start screen initially
     startScreen.style.display = 'block';
-    startScreen.addEventListener('click', () => {
-        startScreen.style.display = 'none';
-        // Focus the game container before displaying scene
-        document.getElementById('game-container').focus();
-        displayScene(gameState.currentScene);
-    });
+    gameContainer.style.display = 'none';
     
-    // Also allow any key to start (now works without clicking first)
-    document.addEventListener('keydown', (e) => {
-        if (startScreen.style.display !== 'none') {
-            startScreen.style.display = 'none';
-            // Focus the game container before displaying scene
-            document.getElementById('game-container').focus();
-            displayScene(gameState.currentScene);
-        }
-    }, { once: true });
-    
+    // Initialize audio and other setup
+    unlockAudio();
     setupControls();
     setupSettingsMenu();
     document.getElementById('rate-value').textContent = gameState.speechRate.toFixed(1);
     
-    // Automatically focus the game container on load
-    document.getElementById('game-container').focus();
+    // Handle click to start
+    startScreen.addEventListener('click', () => {
+        startGame();
+    });
+    
+    // Also allow any key press to start
+    document.addEventListener('keydown', function startGameListener(e) {
+        startGame();
+        document.removeEventListener('keydown', startGameListener);
+    }, { once: true });
+    
+    function startGame() {
+        startScreen.style.display = 'none';
+        gameContainer.style.display = 'block';
+        document.body.style.cursor = 'none'; // Hide cursor when game starts
+        
+        // Focus and display first scene
+        gameContainer.focus();
+        displayScene(gameState.currentScene);
+        
+        // Speak welcome message
+        speak("Welcome to Locked in Orbit. Use up/down arrows to choose, Enter to select, Space to repeat text. Press S for settings.");
+    }
+    
+    // For accessibility, ensure cursor returns when tabbing to controls
+    document.getElementById('settings-btn').addEventListener('focus', () => {
+        document.body.style.cursor = 'default';
+    });
+    
+    document.getElementById('game-container').addEventListener('focus', () => {
+        if (startScreen.style.display === 'none') {
+            document.body.style.cursor = 'none';
+        }
+    });
 }
 
 

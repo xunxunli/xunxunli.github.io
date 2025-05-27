@@ -1,237 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caden Gregorio Portfolio</title>
-    <link rel="shortcut icon" href="images/caden_icon.ico">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caden Gregorio - Resume</title>
+  <link rel="stylesheet" href="resume.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="background-wrapper">
+    <div class="background-glow"></div>
+    <div id="radial-bg"></div>
+
     <header>
-        <img src="images\Untitled-1.gif" class="center">
+      <a href="index.html"><img src="images/chrome_caden2.png" alt="Caden logo" class="logo"/> </a>
+      <nav>
+        <a href="projects.html">PROJECTS</a>
+        <a href="resume.html" class="active">RESUME</a>
+        <a href="design-journal.html">DESIGN JOURNAL</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
     </header>
-    <div class="desktop-container">
-        <div class="desktop">
-            <!-- Left -->
-            <div class="left">
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-camera-retro"></i> Webcam</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content"><img src="images\mali.jpg" style="width: 220px " alt="Ragdoll Cat"><p>Working on a new headshot, for now here is my cat, Mali!</p></div>
+    
+    <div class="resume">
+      <div class="resume-header">
+        <img src="images/caden_resume.png" style="width: 650px" alt="Caden Gregorio">
+        <h2>UX/UI Designer & Information Science Specialist</h2>
+        
+        <div class="contact-info">
+  <div class="contact-item">
+    <span>📍 Apex, NC 27502</span>
+  </div>
+  <button class="reveal-btn" onclick="revealContact(this)">📞 Show Phone Number</button>
+  <button class="reveal-btn" onclick="revealContact(this)">✉️ Show Email</button>
+  <div class="contact-item">
+    <a href="https://xunxunli.github.io/" target="_blank">🌐 xunxunli.github.io</a>
+  </div>
+  <div class="contact-item">
+    <div class="button" style="font-size: 17px; margin-bottom: 7px; margin-top: 7px;">
+                    <a href="files/2025_Caden_Gregorio_Resume.pdf">PDF Version</a>
                 </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-user"></i> About Me</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content"><p>Hi there! I am a current graduate student at UNC set to graduate with my Masters in Information Science by Spring 2025. <br> <br> For my undergraduate years, I also went to UNC and graduated with a BSIS in Information Science as well as minors in Chinese and Cognitive Science. My interests lie in UX, web design, graphic design, databases, data science, and more.</p></div>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-school-flag"></i> Education</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h2>University of North Carolina at Chapel Hill</h2>
-                        2021 - PRESENT<br>
-                        <p>Master's of Science in Information Science 2025</p>
-                        <p>Bachelor's of Science in Information Science 2023</p>
-                        <p>Major: Information Science. <br>Minor: Chinese Language, Cognitive Science.<br>GPA: 3.85</p>
-                        
-                        <h2>Wake Technical Community College</h2>
-                        <p>2019 - 2021 (Dual enrollment during Highschool)</p>
-                        <p>Associates in Arts.</p>
-                        <p>GPA: 4.00</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Middle-->
-            <div class="middle">
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-house"></i> Site Navigation</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <nav class="navbar">
-                        <a href="index.html">Home</a>
-                        <a href="resume.html">Resume</a>
-                        <a href="design.html">Graphic Design</a>
-                        <a href="uisprints.html">UI Sprints</a>
-                        <a href="usability_test.html">Usability Projects</a>
-                    </nav>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-download"></i> Downloadable Resume (.pdf)</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <nav class="navbar">
-                        <a href="files\Caden_Gregorio_Resume_2025.pdf" download><i class="fa-solid fa-download"></i> 2025 Caden Gregorio Resume .pdf</a>
-
-                    </nav>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-briefcase"></i> Work Experience</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h1>Madison Womble LLC — Administrative Assistant</h1>
-                        <h2>January 2021 - PRESENT</h2>
-                        <p>Worked on company research, assisted Airbnb booking process, and used Quickbooks for bookkeeping.</p>
-                        <br>
-                        <h1>UNC School of Information Library Science - UX/UI Lead</h1>
-                        <h2>June 2024 - August 2024</h2>
-                        <p>Revamped an outdated resource website with over 30 pages, implementing a user-friendly format, enhancing overall usability and accessibility. Conducted user testing and research, collaborating with SILS staff to refine UX/UI design, while sharpening communication, decision-making, and critical thinking skills.</p>
-                        <br>
-                        <h1>Sweet Talk Cafe - Barista/ Team Member</h1>
-                        <h2>June 2023 - August 2023</h2>
-                        <p>Promoted, collected orders for, and prepared diverse types of coffee, specialty drinks, and desserts. Ensured efficient operations from opening to closing through customer rushes through coordination and leadership.</p>
-                        <br>
-                        <h1>UNC - Research Assistant</h1>
-                        <h2>February 2022 - March 2023</h2>
-                        <p>Collected and prepared datasets of varying formats including SQL and python for entry into an organized database and spreadsheet, conducted literature searches, performed critical qualitative analysis on documents. Worked with OCR and Adobe Acrobat as well.</p>
-                    
-                    </div>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-people-group"></i> Community</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h2>Kappa Phi Lambda Sorority, Inc.</h2>
-                        <p>
-                            Design Chair<br>
-                            <br>
-                            • Created graphic designs for all functions - flyers, social media posts, digital media, philanthropy awareness- reaches upwards of 2.3k followers
-                            <br>
-                            <br>
-                            Recruitment Chair <br>
-                            <br>• Planned, hosted, and organized eight events for recruitment purposes with more than 50+ attendees
-                            <br>
-                            <br>
-                            Fundraising Chair
-                            <br>
-                            <br>
-                            • Planned multiple events throughout the semester to raise over $1k in funds for our organization.
-                            <br>
-                            • Designed, advertised and carried out the sale of a product that brought in over $500 for the organization 
-                        </p>
-                        <h2>
-                            Asian American Student Association
-                        </h2>
-                        <p>
-                            Design Chair and Executive Board<br>
-                            <br>• Created numerous graphic designs throughout the semesters using a mix of Procreate and digital editing software
-                            <br>• Fostered a welcoming environment for upwards of 2000 members 
-                        </p>
-                        <h2>
-                            Mixed Asian Pacific Islander Student Heritage
-                        </h2>
-                        <p>
-                            Executive Board Designer
-                        </p>
-            
-                    
-                    </div>
-                </div>
-            </div>
-            
-            <!--Right-->
-            <div class="right">
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-user"></i> Contact</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <p><strong><i class="fa-solid fa-envelope"></i> Email:</strong> <span id="email"></span></>
-                        <p><strong><img src="images/LinkedIn_icon.svg.webp" style="height:15px; border: 0px;"> LinkedIn:</strong> <a href="https://www.linkedin.com/in/caden-gregorio/" target="_blank">linkedin.com/in/caden-gregorio</a></p>
-                    </div>
-                    
-                    <script>
-                        // Scramble your email address
-                        const email = "cadey.gregorio" + "@" + "gmail.com";
-                        document.getElementById("email").innerHTML = `<a href="mailto:${email}">${email}</a>`;
-                    </script>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-bars"></i> Skills</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content"><h3>Web Design<br>
-                        HTML/CSS<br>
-                        Figma<br>
-                        Human Centered Design<br>
-                        UX Writing<br>
-                        Python<br>
-                        SQL<br>
-                        Microsoft Word/Excel/PP<br>
-                        Graphic Design<br>
-                        Adobe Creative Suite<br>
-                        Strong Artistic Ability<br></h3>
-                    </div>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-graduation-cap"></i> Relevant Coursework</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>MEJO 581 -</h3><p>User Experience Design and Usability</p>
-                        <h3>INLS 690 -</h3><p>Design for Accessibility</p>
-                        <h3>INLS 718 -</h3><p>User Interface Design</p>
-                        <h3>INLS 719 -</h3><p>Usability Testing and Evaluation</p>
-                        <h3>INLS 523/623 -</h3><p>Database Management I/II</p>
-                        <h3>INLS 572 -</h3><p>Web Development</p>
-                        <h3>PSYC 330 -</h3><p>Cognitive Science</p>
-                        <h3>INLS 683 -</h3><p>Project Management</p>
-                        <h3>COMP 210 -</h3><p>Programming II (Python)</p>
-                        <h3>INLS 382 -</h3><p>Information systems & design</p>
-                    </div>
-                </div>
-            </div>
-
-
-            
-        </div>
     </div>
+</div>
+
+
+      </div>
+      
+      <div class="resume-section">
+        <h3>Professional Experience</h3>
+        
+        <div class="experience">
+          <div class="experience-date">June 2024 - August 2024</div>
+          <div class="experience-title">UNC School of Information Library Science – UX/UI Lead</div>
+          <div class="experience-description">
+            Revamped an outdated resource website with over 30 pages, implementing a user-friendly format, enhancing overall usability and accessibility. Conducted user testing and research, collaborating with SILS staff to refine UX/UI design, while sharpening communication, decision-making, and critical thinking skills.
+          </div>
+        </div>
+        
+        <div class="experience">
+          <div class="experience-date">June 2023 - August 2023</div>
+          <div class="experience-title">Sweet Talk Cafe – Barista/ Team Member</div>
+          <div class="experience-description">
+            Promoted and prepared diverse types of coffee, specialty drinks, and desserts. Ensured efficient operations with coordination and leadership.
+          </div>
+        </div>
+        
+        <div class="experience">
+          <div class="experience-date">February 2022 - March 2023</div>
+          <div class="experience-title">UNC – Research Assistant</div>
+          <div class="experience-description">
+            Collected and prepared various datasets of varying formats for entry into an organized database and spreadsheet, conducted literature searches, performed critical qualitative analysis on documents.
+          </div>
+        </div>
+        
+        <div class="experience">
+          <div class="experience-date">January 2021 - PRESENT</div>
+          <div class="experience-title">Madison Womble LLC — Administrative Assistant</div>
+          <div class="experience-description">
+            Worked on company research, assisted Airbnb booking process, and used Quickbooks for bookkeeping.
+          </div>
+        </div>
+        
+        <div class="experience">
+          <div class="experience-date">November 2018 - January 2019</div>
+          <div class="experience-title">Target — Seasonal Worker, Guest Advocate</div>
+          <div class="experience-description">
+            Primarily worked as a cashier checking out people during holiday rush season, and organized and unboxed merchandise to restock on shelves.
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h3>Other Relevant Experience</h3>
+        <div class="experience">
+          <div class="experience-date">Spring 2025</div>
+          <div class="experience-title">Presenter at Governor Morehead School for the Blind Accessible STEM Expo</div>
+          <div class="experience-description">
+            Created and shared a project made for blind and low-vision students called "Locked in Orbit," an accessible choose-your-own-adventure webapp made in HTML, CSS and Javascript.
+          </div>
+        </div>
+        <div class="experience">
+          <div class="experience-date">Spring 2024</div>
+          <div class="experience-title">Panelist at 2024 Symposium on Information for Social Good and Scholars Showcase</div>
+          <div class="experience-description">
+            Researched and presented on the unique effects of social media and modern technology use on Generation Alpha and what it means for society.
+          </div>
+        </div>
+        <div class="experience">
+          <div class="experience-date">Over the span of 5 semesters</div>
+          <div class="experience-title">Design Chair for Multiple Organizations</div>
+          <div class="experience-description">
+            Created designs for social media, print, and merchandise for UNC's Asian American Student Association, Mixed Asian Student Heritage Club, and Kappa Phi Lambda Sorority, Inc. Responsibilities also included planning events for upwards of 200+ members of a club and facilitating event logistics.
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="resume-section">
+        <h3>Education</h3>
+        
+        <div class="education-item">
+          <h4>University of North Carolina, Chapel Hill</h4>
+          <div class="education-meta">
+            <span>August 2021 – present</span>
+            <span>GPA: 3.87</span>
+          </div>
+          <p>Major: Information Science. Minor: Chinese Language, Cognitive Science. Bachelor's received Fall 2023, Master's received Spring 2025.</p>
+        </div>
+        
+        <div class="education-item">
+          <h4>Wake Tech Community College</h4>
+          <div class="education-meta">
+            <span>2019-2021</span>
+            <span>GPA: 4.0</span>
+          </div>
+          <p>Associates in Arts (Completed while Dual Enrolled in High School)</p>
+        </div>
+        
+        <div class="education-item">
+          <h4>Enloe Magnet High School</h4>
+          <div class="education-meta">
+            <span>2017-2021</span>
+            <span>GPA: 4.0 unweighted, 4.57 weighted</span>
+          </div>
+          <p>High School Diploma, summa Cum Laude</p>
+        </div>
+      </div>
+      
+      <div class="resume-section">
+        <h3>Skills & Expertise</h3>
+        
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Technical Skills</h4>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Figma</li>
+              <li>Adobe Creative Suite</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h4>UX/UI Design</h4>
+            <ul>
+              <li>User Research</li>
+              <li>Usability Testing</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Accessible Design</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <ul>
+                <li>English (native)</li>
+              <li>Mandarin (Semi-fluent)</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h4>Soft Skills</h4>
+            <ul>
+              <li>Team Player</li>
+              <li>Leadership</li>
+              <li>Quick Learner</li>
+              <li>Strong Communication</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="resume-section">
+        <h3>Relevant Coursework</h3>
+        
+        <div class="coursework">
+          <div>
+            <h4>UX/UI Design</h4>
+            <ul>
+              <li>INLS 690: Accessible Design</li>
+              <li>MEJO 581: UX Design</li>
+              <li>INLS 719: Usability Testing</li>
+              <li>INLS 718: UI Design</li>
+            </ul>
+            
+            <h4>Development</h4>
+            <ul>
+              <li>INLS 572: Web Development</li>
+              <li>COMP 110: Programming (Python)</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4>Information Science</h4>
+            <ul>
+              <li>INLS 523/623: Database Management I/II</li>
+              <li>INLS 613: Text Mining</li>
+              <li>INLS 382: Information Systems & Design</li>
+              <li>INLS 685: Project Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const radialBg = document.getElementById('radial-bg');
+      document.addEventListener('mousemove', (e) => {
+        radialBg.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, rgba(255,255,255,0.1), transparent 200px)`;
+      });
+    });
+function revealContact(button) {
+  if(button.textContent.includes('Phone')) {
+    button.outerHTML = '<div class="contact-item">📞 <span id="phone">&#40;919&#41; 809&#45;2533</span></div>';
+  } else {
+    button.outerHTML = '<div class="contact-item">✉️ <span id="email">c&#97;dey&#46;gregorio&#64;gm&#97;il&#46;com</span></div>';
+  }
+}
+</script>
 </body>
-<script src="https://kit.fontawesome.com/cd7b4fc703.js" crossorigin="anonymous"></script>
 </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Caden Portfolio</title>
+  <link rel="stylesheet" href="projects.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-wrapper">
+    <div class="background-glow"></div>
+    <div id="radial-bg"></div>
+
+    <header>
+      <a href="index.html"><img src="images/chrome_caden2.png" alt="Caden logo" class="logo"/> </a>
+      <nav>
+        <a href="projects.html" class="active">PROJECTS</a>
+        <a href="resume.html">RESUME</a>
+        <a href="design-journal.html">DESIGN JOURNAL</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <main class="projects-wrapper">
+      <div class="projects-hero">
+        <h1 class="projects-title">Selected Works</h1>
+        <p class="projects-subtitle">A collection of my design projects and research initiatives</p>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="images/ford_mockup.png" alt="Duke Fuqua Library Redesign" class="project-image">
+            
+          </div>
+          <div class="project-content">
+            <h3>Duke Fuqua Library Usability Study & Redesign</h3>
+            <div class="project-tags">
+              <span class="tag">UX Research</span>
+              <span class="tag">Usability Testing</span>
+              <span class="tag">UI Design</span>
+            </div>
+            <p>A complete overhaul of the business library's digital resources based on extensive user testing with MBA students.</p>
+            <a href="fordlibrary.html" class="project-button">View Case Study</a>
+            
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="images/juryx/juryx_home.png" alt="JuryX Attorney Dashboard" class="project-image">
+
+          </div>
+          <div class="project-content">
+            <h3>JuryX Attorney Dashboard</h3>
+            <div class="project-tags">
+              <span class="tag">Dashboard Design</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Prototyping</span>
+            </div>
+            <p>Designed a litigation analytics platform helping attorneys predict juror behavior during voir dire.</p>
+            <a href="juryx.html" class="project-button">See Details</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="images/sils/sils_home.png" alt="SILS Resource Overhaul" class="project-image">
+            
+          </div>
+          <div class="project-content">
+            <h3>SILS Resource Overhaul</h3>
+            <div class="project-tags">
+              <span class="tag">Information Architecture</span>
+              <span class="tag">Content Strategy</span>
+              <span class="tag">Accessibility</span>
+            </div>
+            <p>Restructured 50+ academic resources into a findable system with clear pathways for students and faculty.</p>
+            <a href="sils-resources.html" class="project-button">View Project</a>
+          </div>
+        </div>
+
+
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="images/typeform/typeform_1.jpg" alt="Typeform Usability Test" class="project-image">
+            
+          </div>
+          <div class="project-content">
+            
+            <h3>Typeform Usability Test</h3>
+            <div class="project-tags">
+              <span class="tag">Usability Testing</span>
+              <span class="tag">Heuristic Evaluation</span>
+              <span class="tag">Report Writing</span>
+            </div>
+            <p>Conducted comprehensive testing of Typeform's survey builder with 12 participants across experience levels.</p>
+            <a href="/typeform.html" class="project-button">Read Report</a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="images/design/design_icon.png" alt="School Org Graphic Design" class="project-image">
+            
+          </div>
+          <div class="project-content">
+            <h3>School Org Graphic Design Works</h3>
+            <div class="project-tags">
+              <span class="tag">Graphic Design</span>
+              <span class="tag">Branding</span>
+              <span class="tag">Print Design</span>
+            </div>
+            <p>Visual identity and marketing materials for campus organizations including posters, social media, and merch.</p>
+            <a href="school-design.html" class="project-button">View Gallery</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const radialBg = document.getElementById('radial-bg');
+    document.addEventListener('mousemove', (e) => {
+      radialBg.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, rgba(255,255,255,0.1), transparent 200px)`;
+    });
+  </script>
+</body>
+</html>

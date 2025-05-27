@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: black;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.6;
+    padding: 0;
+}
+
+.logo {
+    height: 60px;
+}
+  
+#radial-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+  
+.background-glow {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;  /* smaller width */
+    height: 1000px;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.08) 0%,
+        transparent 70%
+    );
+    z-index: 0;
+    pointer-events: none;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    z-index: 1;
+    position: relative;
+}
+  
+nav a {
+    margin: 0 1rem;
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.resume {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+      z-index: 1;
+    }
+    
+.resume-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.resume-header h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #e066b5;
+    letter-spacing: 1px;
+}
+
+.resume-header h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.8);
+}
+
+.contact-item a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-item a:hover {
+    color: #e066b5;
+}
+
+.resume-section {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.resume-section h3 {
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 2px solid #e066b5;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Experience timeline */
+.experience {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.experience:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #a76e93;
+    border: 3px solid rgba(219, 102, 186, 0.3);
+}
+
+.experience:after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 25px;
+    bottom: -25px;
+    width: 2px;
+    background: rgba(255,255,255,0.1);
+}
+
+.experience:last-child:after {
+    display: none;
+}
+
+.experience-date {
+    font-weight: 500;
+    color: #cf75af;
+    margin-bottom: 5px;
+}
+
+.experience-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.experience-description {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid #e066b5;
+    padding: 15px;
+}
+
+.skill-category h4 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.skill-category ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.skill-category li {
+    margin-bottom: 5px;
+    color: rgba(255,255,255,0.8);
+}
+
+/* Education */
+.education-item {
+    margin-bottom: 25px;
+}
+
+.education-item h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.education-meta {
+    display: flex;
+    gap: 20px;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Coursework */
+.coursework {
+    columns: 2;
+    column-gap: 30px;
+}
+
+.coursework ul {
+    margin-top: 0;
+    break-inside: avoid;
+}
+
+.coursework h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    }
+    
+    .skills-grid {
+    grid-template-columns: 1fr;
+    }
+    
+    .coursework {
+    columns: 1;
+    }
+}
+
+.reveal-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.reveal-btn:hover {
+  color: rgb(102, 106, 219);
+}
+
+.button {
+  margin-top: 1rem;
+  align-items: center;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  padding-top: 5px;
+  color: white;
+  margin-top: auto; /* 👈 pins the button to the bottom of the card */
+  margin-bottom: 0.5rem; /* optional, adds space below the button */
+  cursor: pointer;
+  border-radius: 20px;;
+}

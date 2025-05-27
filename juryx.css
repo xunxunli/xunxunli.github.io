@@ -1,0 +1,366 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: black;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.6;
+    padding: 0;
+}
+  
+#radial-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+  
+.background-glow {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;  /* smaller width */
+    height: 1000px;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.08) 0%,
+        transparent 70%
+    );
+    z-index: 0;
+    pointer-events: none;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    z-index: 1;
+    position: relative;
+}
+  
+nav a {
+    margin: 0 1rem;
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+  
+.logo {
+    height: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: rgb(99, 136, 195);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 40px 0 20px;
+    color: white;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: white;
+}
+
+p {
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 80%;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    background-color: #f0f0f000;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+.stats,
+.stats-container {
+    display: flex;
+    margin: 40px 0;
+}
+
+.stats {
+    justify-content: space-between;
+}
+
+.stat-item,
+.stat-column {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-item {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+}
+
+.stat-item strong {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    color: white;
+}
+
+.highlight-text {
+    margin: 20px 0 30px; /* Changed from 40px 0 to move the button up */
+}
+
+.highlight-text strong {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 40px 0;
+}
+
+.process-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+}
+
+.process-table th {
+    text-align: left;
+    padding: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.process-table td {
+    padding: 15px;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.process-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.process-image-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+/* For actual images (replace the placeholder div with img tags later) */
+.process-image {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.work-section {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.categories {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 40px 0;
+    color: white;
+}
+
+.btn-link {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Satoshi', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .btn-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Add to juryx.css */
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 40px 0;
+}
+
+.process-step {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.process-step h3 {
+  color: rgb(99, 136, 195);
+  margin-top: 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
+  margin: 40px 0;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.feature-item h3 {
+  color: rgb(99, 136, 195);
+  margin-top: 10px;
+}
+
+ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  max-width: 1000px;
+}
+
+.lightbox-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close-lightbox:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(90deg);
+}

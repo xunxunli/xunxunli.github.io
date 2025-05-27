@@ -1,185 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caden Gregorio Portfolio</title>
-    <link rel="shortcut icon" href="images/caden_icon.ico">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caden Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+<header>
+  <a href="index.html"><img src="images/chrome_caden2.png" alt="Caden logo" class="logo" /></a>
+  <nav>
+    <a href="projects.html">PROJECTS</a>
+    <a href="resume.html">RESUME</a>
+    <a href="design-journal.html">DESIGN JOURNAL</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
 <body>
-    <header>
-        <img src="images\Untitled-1.gif" class="center">
-    </header>
-    <div class="desktop-container">
-        <div class="desktop">
-            <!-- Left Section -->
-            <div class="left">
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-user"></i> About Me</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <p>Hi, I'm <strong>Caden Gregorio</strong>, a passionate UI/UX Designer and Graphic Designer based in North Carolina. <br><br>I specialize in creating intuitive, user-centered designs that solve real-world problems. With a background in Information Science and Cognitive Science, I bring a unique perspective to every project I work on.</p>
-                    </div>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-list"></i> Skills</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <ul>
-                            <li><strong>UI/UX Design:</strong> UX writing, Wireframing, Prototyping, User Research</li>
-                            <li><strong>Graphic Design:</strong> Branding, Illustration, Print Design</li>
-                            <li><strong>Tools:</strong> Figma, Adobe XD, Sketch, Photoshop, Illustrator</li>
-                            <li><strong>Front-End Development:</strong> HTML, CSS, JavaScript</li>
-                        </ul>
-                        <p>Interested in learning more? Check out my <a href="resume.html">resume page!</a></p>
-                    </div>
-                </div>
-            </div>
+  <div class="background-wrapper">
+    <div class="background-glow"></div>
+    <div class="star-accent top-left"></div>
+    <div class="butterfly top-right"></div>
+    <div class="star-accent mid-right"></div>
+    <div id="radial-bg"></div>
+  <main>
+    <section class="hero">
+      <img src="images/STYLE.png" alt="UX/UI Designer" class="title" style="width:35%" />
+      <p class="tagline">Designing with soul & structure.</p>
+    </section>
+    
+    <section class="projects">
+      
+      <div class="card">
+        <h3>Duke Fuqua Library Study & Redesign</h3>
+        <p>A research-based redesign to improve information access for MBA students through testing, insights, and reorganization.</p>
+        <img src="images/ford_mockup.png" alt="Mockup of Ford Library Website" class="card-image" />
+        <a href="fordlibrary.html" class="btn-link">View Case Study</a>
+      </div>
+      <div class="card">
+        <h3>Jury-X Attorney Dashboard</h3>
+        <p>Jury-X's internal dashboard is very complex and hard for attorneys to understand at a glance. Enter: a dashboard tailored to the attorney clients of Jury-X. </p>
+        <img src="images/juryx/juryx_home.png" alt="Mockup of Va11halla POS UI" class="card-image" />
+        <a href="juryx.html" class="btn-link">View Case Study</a>
+      </div>
+      <div class="card">
+        <h3>UNC SILS Canvas Redesign</h3>
+        <p>A usability-driven overhaul of a student resource site, improving clarity, navigation, and mobile accessibility.</p>
+        <img src="images/silsmockup.png" alt="Mockup of Va11halla POS UI" class="card-image" />
+        <a href="sils-resources.html" class="btn-link">View Case Study</a>
+      </div>
+      
+      
+      </div>
+    </section>
 
-            <!-- Middle Section -->
-            <div class="middle">
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-house"></i> Site Navigation</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <nav class="navbar">
-                        <a href="index.html">Home</a>
-                        <a href="resume.html">Resume</a>
-                        <a href="design.html">Graphic Design</a>
-                        <a href="uisprints.html">UI Sprints</a>
-                        <a href="usability_test.html">Usability Projects</a>
-                    </nav>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-thumbtack"></i> Featured Projects</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h2>UI Sprints #1-#4</h2>
-                        <p>A collection of UI Sprints that provide opportunities to experiment with new designs, receive feedback, and improve as a designer. </p>
-                        <img src="images\gregorio_sprint4_icon.png" alt="Purrfect Brew Cat Cafe Site Home" class="lightbox-trigger" style="width:80%; margin-bottom: 10px;">
-                        <p>Sprint 1: Mobile redesign<br>
-                        Sprint 2: Error 404 UX Writing and Design<br>
-                    Sprint 3: Toggle Button Design<br>
-                    Sprint 4: Purrfect Brew Cat Cafe Website Design</p>
-                    
-                        <a href="uisprints.html">View Sprints →</a>
+    <section class="divider">
+      <img src="images/rope_divider.svg" alt="Divider Rope" class="divider-rope" />
+    </section>
 
-                        <h2>Usability Projects</h2>
-                        <p>A collection of Usability Testing projects that develop new understanding of what it means to be "usable," as well as redesigns and suggestions for various websites based on test findings.</p>
-                        <p><strong>Typeform Usability Test</strong></p>
-                            <img src="images/typeform_1.jpg" alt="TypeForm Home" class="lightbox-trigger" style="width:80%; margin-bottom: 10px; text-align: center;">
-                            <p>UNC SILS Resource Sites Overhaul</p>
-                            <img src="images/sils_home.png" alt="New SILS Homepage" class="lightbox-trigger" style="width:80%; margin-bottom: 10px;"></img>
-                        <p><a href="usability_test.html">View Projects →</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Section -->
-            <div class="right">
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-user"></i> Contact</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <p>Let's connect! Feel free to reach out for collaborations, job opportunities, or just to say hi.</p>
-                        <p><strong><i class="fa-solid fa-envelope"></i> Email:</strong> <span id="email"></span></>
-                        <p><strong><img src="images/LinkedIn_icon.svg.webp" style="height:15px; border: 0px;"> LinkedIn:</strong> <a href="https://www.linkedin.com/in/caden-gregorio/" target="_blank">linkedin.com/in/caden-gregorio</a></p>
-                    </div>
-                    
-                    <script>
-                        // Scramble your email address
-                        const email = "cadey.gregorio" + "@" + "gmail.com";
-                        document.getElementById("email").innerHTML = `<a href="mailto:${email}">${email}</a>`;
-                    </script>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <span><i class="fa-solid fa-pen"></i> Design Philosophy</span>
-                        <div class="window-buttons">
-                            <span class="minimize">🗕</span>
-                            <span class="exclose">✖</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Human Centered Design</h3>
-                        <p>I believe in creating designs that are not only visually appealing but also functional and user-centered. My process involves:</p>
-                        <ul>
-                            <li>Understanding the user's needs and pain points.</li>
-                            <li>Iterating on designs based on feedback and testing.</li>
-                            <li>Focusing on accessibility and inclusivity.</li>
-                        </ul>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </div>
-</body>
-<script src="https://kit.fontawesome.com/cd7b4fc703.js" crossorigin="anonymous"></script>
- <!-- Lightbox Container -->
- <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
+    <section class="about">
+      <img src="images/caden.png" alt="Caden Avatar" class="avatar" />
+      <div class="bio">
+        <h2>About</h2>
+        <p>I'm Caden Gregorio, a UX and UI designer with a passion for creating sleek, futuristic designs. I blend style, clarity, and narrative to build interfaces that feel both intuitive and compelling.</p>
+      </div>
+    </section>
+  </main>
 </div>
-
-<!-- JavaScript for Lightbox -->
+</body>
 <script>
-    // Get the lightbox and lightbox image elements
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.lightbox .close');
-
-    // Function to open the lightbox
-    function openLightbox(event) {
-        if (event.target.classList.contains('lightbox-trigger')) {
-            lightbox.style.display = 'block';
-            lightboxImg.src = event.target.src;
-        }
-    }
-
-    // Function to close the lightbox
-    function closeLightbox() {
-        lightbox.style.display = 'none';
-    }
-
-    // Add event listeners to all images with the class 'lightbox-trigger'
-    document.querySelectorAll('.lightbox-trigger').forEach(img => {
-        img.addEventListener('click', openLightbox);
-    });
-
-    // Close lightbox when close button is clicked
-    closeBtn.addEventListener('click', closeLightbox);
-
-    // Close lightbox when clicking outside the image
-    lightbox.addEventListener('click', (event) => {
-        if (event.target === lightbox) {
-            closeLightbox();
-        }
-    });
+  const radialBg = document.getElementById('radial-bg');
+  document.addEventListener('mousemove', (e) => {
+    radialBg.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, rgba(255,255,255,0.1), transparent 200px)`;
+  });
 </script>
 </html>

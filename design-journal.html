@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Journal – Caden Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-wrapper">
+    <div class="background-glow"></div>
+    <div id="radial-bg"></div>
+
+    <header>
+      <a href="index.html"><img src="images/chrome_caden2.png" alt="Caden logo" class="logo" /></a>
+      <nav>
+        <a href="projects.html">PROJECTS</a>
+        <a href="resume.html">RESUME</a>
+        <a href="design-journal.html">DESIGN JOURNAL</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <main class="journal-wrapper">
+      <!-- Sidebar column -->
+      <div class="journal-sidebar">
+        <div class="toc">
+          <h3>Journal Index</h3>
+          <ul>
+            <li><a href="#va11pos">VA11-HALL-A POS System</a></li>
+            <li><a href="#purrfectbrew">Purrfect Brew Cat Cafe</a></li>
+            <li><a href="#orbit">Text Adventure Game</a></li>
+            <li><a href="#acnh">ACNH Error 404 Design</a></li>
+            <li><a href="#togglebutton">Dark Mode Toggle Button</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Journal entries -->
+      <div class="journal-content">
+        <img src="images/journal/design_header.png" style="width:400px; display: flex; justify-content: center;">
+        <!-- <h1 class="journal-title">✶ Design Journal</h1> -->
+        <p class="journal-intro">Shorter projects and design challenges that I've been working on and thought I'd share outside of the featured projects area!</p>
+
+        <div class="journal-entry" id="va11pos">
+          <h2>Cyberpunk Bartending Point of Sale (POS) System</h2>
+          
+          <p class="entry-date">April 2025</p>
+          <p>For this project, I created a POS interface for the fictional bar VA-11 Hall-A from the video game of the same name. The game takes place in a futuristic, cyberpunk world and you play as Jill, a bartender at the titular bar. You serve drinks to various quirky customers and the drinks that you make influence the storyline's progression.</p>
+          <p>I thought that this project was interesting not only due to the stylish cyberpunk look, but it also takes a deeper look into a current gap in the market: POS systems made specifically for bars. When I looked on the internet for current real examples, I could only find a few very outdated looking systems, and the rest of the examples of POS that I could find were for restaurants with all sorts of features that were not relevant to bars.</p>
+          <p>One thing I learned a lot about was just how different the needs of different establishments can be with their POS systems. For example, bars have a heavy emphasis on tabs and being able to open and close them, as well as keep customer information for tab security. On the other hand, restaurants have table management and waiter/waitress assignments.</p>
+          <p>In terms of prototyping, I learned a lot about variables and dynamic prototyping in Figma with this project, and I'm proud of how it turned out! If I had more time, I would love to make it fully functional.</p>
+        <a href="https://www.figma.com/proto/oMbxUU4P4WICpCtQDBUO0o/Gregorio_Caden-UI-SPRINT-5?node-id=4-1860&t=QB4UTpfY44L1JccF-1&scaling=min-zoom&content-scaling=fixed&page-id=4%3A1859&starting-point-node-id=4%3A2866" class="btn-link" style="text-align: center; margin-top: 0">View Interactive Prototype</a>
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slide active">
+              <img src="images/journal/vallhalla_inspo.jpg" alt="Real game screenshot">
+              <p style="text-align:center">Screenshot from VA11-Hall-A game that I took inspiration from</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/va11halla_game.png" alt="Real game screenshot 2">
+              <p style="text-align:center">Screenshot from VA11-Hall-A game that I took inspiration from 2</p>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+            
+            <!-- Dot indicators -->
+            <div class="slideshow-controls">
+              <span class="slide-dot active"></span>
+              <span class="slide-dot"></span>
+              <span class="slide-dot"></span>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slide active">
+              <img src="images/vallhalla_mockup.png" alt="POS mockup screen 1">
+              <p style="text-align:center">Physical mockup with POS home</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/va_home.png" alt="POS mockup screen 2">
+            </div>
+            <div class="slide">
+              <img src="images/journal/va_order.png" alt="POS mockup screen 3">
+            </div>
+            <div class="slide">
+              <img src="images/journal/va_tabs.png" alt="POS mockup screen 3">
+            </div>
+            <div class="slide">
+              <img src="images/journal/va_viewtab.png" alt="POS mockup screen 3">
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+            
+            <!-- Dot indicators -->
+            <div class="slideshow-controls">
+              <span class="slide-dot active"></span>
+              <span class="slide-dot"></span>
+              <span class="slide-dot"></span>
+            </div>
+        </div>
+        <div style= "text-align: center;">
+
+        </div>
+      </div>
+<div class="journal-entry" id="orbit">
+          <h2>LOCKED IN ORBIT: Accessible Text-Based Adventure Game for Blind and Low-Vision Students</h2>
+          <p class="entry-date">April 2025</p>
+          <p>This is a project that is different from what I normally do! <br><br> I was given the opportunity to create a project for the Governor Morehead School for the Blind's STEM Expo, and my team and I decided to make a text-based choose your own adventure game. The game is titled Locked in Orbit, and it is designed to be accessible for blind and low-vision users. Set aboard a stranded spaceship, the player explores eerie corridors, evades danger, and makes critical decisions through nothing but narration and sound. The story features branching paths, moral dilemmas, and multiple endings, some chilling, others redemptive.
+<br><br>
+The interface is fully audio-navigable: players use the arrow keys to cycle through choices, Enter to select, and Spacebar to repeat narration. Everything is read aloud using the browser's built-in speech synthesis, with customizable voice speed and simple keyboard controls. Visually, the game uses large, high-contrast text with no mouse or hover requirements. We wanted to make a game that could be played entirely by ear, with no need for sighted assistance. <br> <br> Check out the game for yourself! It's hosted live on github pages:</p>
+          <a href="https://xunxunli.github.io/lockedinorbit/" class="btn-link" style="text-align: center; margin-top: 0; margin-bottom: 10px;">Play the Game</a>
+          <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slide active">
+              <img src="images/locked_in_orbit.png" alt="Black box with yellow text.">
+              <p style="text-align:center">Locked in Orbit's title screen, instructing users to press any button to start, audibly.</p>
+            </div>
+            <div class="slide">
+              <img src="images/locked_scene.png" alt="Scene text in a rectangular box with 4 dialogue choices below.">
+              <p style="text-align:center">An example scene from the game.</p>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+            
+            <!-- Dot indicators -->
+            <div class="slideshow-controls">
+              <span class="slide-dot active"></span>
+              <span class="slide-dot"></span>
+              <span class="slide-dot"></span>
+            </div>
+        </div>
+        </div>
+        <div class="journal-entry" id="purrfectbrew">
+          <h2>Site Design for Purrfect Brew Cat Cafe</h2>
+          <p class="entry-date">March 2025</p>
+          <p>In this short UI Sprint, I was challenged with creating a website for a fake business that was randomly generated by an online project generating tool. From this tool, I was tasked with the business "Purrfect Brew," a cat cafe that serves drinks and hosts a cozy space where customers can interact with and adopt cats.<br><br>I had great fun being able to design everything fron the color palette, to the fonts, to the logo!</p>
+          <a href="https://www.figma.com/proto/8iXzso5HN9Ka3K7uqs2j8x/gregorio_sprint4?node-id=3-982&p=f&t=vczzU3LQk3o0DOap-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A981&starting-point-node-id=3%3A982" class="btn-link" style="text-align: center; margin-top: 0; margin-bottom: 10px;">View Interactive Prototype</a>
+          <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slide active">
+              <img src="images/journal/purr_1.png" alt="Beige homepage with lots of cats and coffee.">
+              <p style="text-align:center">Purrfect Brew's landing page, including a menu of both cats and drinks!</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/purr_2.png" alt="Cat Catalogue.">
+              <p style="text-align:center">Meet the cats of Purrfect Brew.</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/purr_3.png" alt="Booking Page.">
+              <p style="text-align:center">Book your visit with Purrfect Brew.</p>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+            
+            <!-- Dot indicators -->
+            <div class="slideshow-controls">
+              <span class="slide-dot active"></span>
+              <span class="slide-dot"></span>
+              <span class="slide-dot"></span>
+            </div>
+        </div>
+        </div>
+
+        <div class="journal-entry" id="acnh">
+          <h2>Nostalgic Venture into Error 404 Pages</h2>
+          <p class="entry-date">February 2025</p>
+          <p>In this design challenge, I was tasked with creating an Error 404 page for a brand that did not yet have one. It was interesting to discover just how much thought went into creating what others may see as a more formulaic/template type page. You have to consider precisely how much information would be useful for your target audience. For example, a website about python libraries might have a more detailed error description; however, a website such as Nintendo, who has a large audience base of children may opt to include minimal information and a large "return home" button.</p>
+          <p>In my design, I opted for the latter. I crafted a playful error message in the character of Redd from the Animal Crossing series, and I styled it to look like a dialogue box from Animal Crossing New Horizons. This way, the error message has an aspect of familiarity and makes the audience understand that they did not do something wrong. I experimented with collaging different models together such as grabbing the tent, Redd, and sign images and creating what you see in my page.</p>
+          <img src="images/acnh_desktop.png" alt="ACNH 404 mockup" class="entry-image" />
+        </div>
+
+        <div class="journal-entry" id="togglebutton">
+          <h2>Simple, Stylish Toggle Button</h2>
+          <p class="entry-date">January 2025</p>
+          <p>For this short and quick design sprint, I was tasked to create a toggle button that turns something on and off. The function that I chose to tie my button to was a dark mode/light mode switch. While the design task is simple overall, it really makes you think about the little details inside universally recognized designs. For example, what side means on, and what side means off in a toggle button? Does it matter? Yes! And to add clarity, I added extra icons to indicate the status of the button, portraying exactly what mode it is on.</p>
+          <img src="images/journal/toggle.gif" alt="Toggle button animation" class="entry-image" />
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="back-to-top-fixed">
+    <a href="#"><span class="arrow-circle">↑</span></a>
+  </div>
+<script>
+  // Slideshow functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const slideshows = document.querySelectorAll('.slideshow-container');
+    
+    slideshows.forEach(slideshow => {
+      const slides = slideshow.querySelectorAll('.slide');
+      const dots = slideshow.querySelectorAll('.slide-dot');
+      let currentSlide = 0;
+      
+      // Initialize first slide
+      showSlide(currentSlide);
+      
+      // Dot click events
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          showSlide(currentSlide);
+        });
+      });
+      
+      // Next/previous buttons
+      const prevBtn = slideshow.querySelector('.prev');
+      const nextBtn = slideshow.querySelector('.next');
+      
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        });
+      }
+      
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        });
+      }
+      
+      function showSlide(n) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[n].classList.add('active');
+        dots[n].classList.add('active');
+      }
+    });
+  });
+</script>
+  <script>
+    const radialBg = document.getElementById('radial-bg');
+    document.addEventListener('mousemove', (e) => {
+      radialBg.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, rgba(255,255,255,0.1), transparent 200px)`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="vallhalla.css" />
+  <title>VA-11 Hall-A Bar POS System | UI Design Case Study</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-wrapper">
+    <div class="background-glow"></div>
+    <div id="radial-bg"></div>
+
+    <header>
+      <a href="index.html"><img src="images/chrome_caden2.png" alt="Caden logo" class="logo"/> </a>
+      <nav>
+        <a href="projects.html">PROJECTS</a>
+        <a href="resume.html">RESUME</a>
+        <a href="design-journal.html">DESIGN JOURNAL</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+    <div class="container">
+        <div style="display:inline-block;">
+            <h1 style="display:inline-block;">VA-11 Hall-A Bar POS System</h1>
+        </div>
+        <div class="hero-section">
+             <div class="hero-text">
+                <h2>UI Design Case Study</h2>
+                <p>A specialized Point of Sale (POS) system designed specifically for bartenders at the fictional cyberpunk bar VA-11 Hall-A. This project reimagines traditional restaurant POS interfaces to address the unique workflow and needs of bartenders in a high-volume, fast-paced environment.</p>
+
+                <div class="stats-container">
+                    <div class="stat-column">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Screens Designed</div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-value">8</div>
+                        <div class="stat-label">Key Features</div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-value">15</div>
+                        <div class="stat-label">User Flows</div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-value">1</div>
+                        <div class="stat-label">Cyberpunk Vibe</div>
+                    </div>
+                </div>
+                <div class="highlight-text" style="font-size: 17px; margin-bottom: 7px; margin-top: 7px;">
+                    <a href="https://www.figma.com/proto/oMbxUU4P4WICpCtQDBUO0o/Gregorio_Caden-UI-SPRINT-5?node-id=4-1860&
+p=f&t=mR3uSDyAcWLv5KlJ-0&scaling=scale-down&content-scaling=fixed&page-id=4%3A1859" class="btn-link" target="_blank">View Interactive Prototype</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="images/journal/vallhalla_mockup.png" style="width:100%" alt="VA-11 Hall-A POS Interface" data-lightbox="gallery">
+            </div>
+        </div>
+        
+        <hr>
+        
+        <section class="project-overview">
+            <h2>Project Overview</h2>
+            <div class="two-column">
+                <div>
+                    <h3>The Challenge</h3>
+                    <p>Most POS systems are designed for restaurant environments with table management as a core feature. However, bars have fundamentally different needs centered around tab management, quick drink ordering, and rapid payment processing. <br><br>This project required designing a system specifically tailored to bartenders' unique workflow.</p>
+                    
+                    <h3>My Approach</h3>
+                    <p>I conducted user research on bar operations, analyzed existing POS systems, and identified key pain points in bartender workflows. The design prioritizes speed, intuitive navigation, and a cyberpunk aesthetic that matches the VA-11 Hall-A universe.</p>
+                </div>
+                <div>
+                    <h3>Key Objectives</h3>
+                    <ul>
+                        <li>Streamline tab management for multiple customers</li>
+                        <li>Enable rapid drink ordering with minimal clicks</li>
+                        <li>Create an order history system for fast referencing</li>
+                        <li>Design for high-pressure, fast-paced environments</li>
+                        <li>Incorporate a cyberpunk aesthetic consistent with the bar's theme</li>
+                    </ul>
+                    <h3>Theme Inspiration</h3>
+                    <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slide active">
+              <img src="images/journal/vallhalla_inspo.jpg" alt="A girl and a dog are depicted on the left in a purple, sci-fi, retro anime style. On the right is a bartending interface for mixing drinks.">
+              <p style="text-align:center">Screenshot from game titled "VA11-Hall-A."</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/va11halla_game.png" alt="A compendium of the different drinks available to make in the game is on the left side, with a bartending interface on the right.">
+              <p style="text-align:center">Screenshot from game titled "VA11-Hall-A."</p>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+            
+            <!-- Dot indicators -->
+            <div class="slideshow-controls">
+              <span class="slide-dot active"></span>
+              <span class="slide-dot"></span>
+
+            </div>
+        </div>
+                </div>
+            
+            </div>
+            
+        </section>
+        
+        <hr>
+        
+        <section class="research-findings">
+            <h2>Research & Discovery</h2>
+            
+            <div class="finding-card">
+                <div class="finding-content">
+                    <h3>1. Tab-Centric Workflow</h3>
+                    <p>Unlike restaurants where tables are stationary, bar customers often move around, making tab management the central organizing principle. The interface needed to prioritize quick tab creation, modification, and payment above all else.</p>
+                    <div class="research-insight">
+                        <h4>Research Insight</h4>
+                        <p>Bartenders need to process transactions in under 10 seconds during peak hours, requiring extremely efficient tab management workflows.</p>
+                    </div>
+                </div>
+                <div class="finding-image">
+                    <img src="images/journal/va_tabs.png" alt="Tab management interface" data-lightbox="gallery">
+                </div>
+            </div>
+            
+            <div class="finding-card reverse">
+                <div class="finding-content">
+                    <h3>2. Rapid Drink Selection</h3>
+                    <p>Bartenders need to access common drinks instantly without scrolling through complex menus. I designed a customizable quick-select panel with favorite drinks and recent orders for maximum efficiency.</p>
+                    <div class="research-insight">
+                        <h4>Research Insight</h4>
+                        <p>Bartenders rely heavily on muscle memory and quick access to frequently ordered drinks, with most service during peak hours involving repetitive orders of popular menu items rather than complex custom drinks.</p>
+                    </div>
+                </div>
+                <div class="finding-image">
+                    <img src="images/journal/va_home.png" alt="Drink selection interface" data-lightbox="gallery">
+                </div>
+            </div>
+            
+            <div class="finding-card">
+                <div class="finding-content">
+                    <h3>3. Order History & Recall System</h3>
+                    <p>Bartenders often need to quickly resolve payment disputes, process refunds, or verify previous transactions when customers have questions about their bills. Traditional systems make this difficult by burying transaction details deep in complex menus, forcing staff to navigate away from current orders during busy service periods.</p>
+                    <div class="research-insight">
+                        <h4>Research Insight</h4>
+                        <p>Quick access to complete transaction history—including payment methods, timestamps, and order details—is essential for resolving customer disputes efficiently without disrupting service flow during peak hours.</p>
+                    </div>
+                </div>
+                <div class="finding-image">
+                    <img src="images/journal/va_order.png" alt="Vertical-scrolling order history table." data-lightbox="gallery">
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <section class="design-process">
+            <h2>Design Process</h2>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <h3>Research & Analysis</h3>
+                    <p>Studied existing POS systems, identified bar-specific needs, and analyzed bartender workflows during different service volumes.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Wireframing</h3>
+                    <p>Created low-fidelity wireframes focusing on tab management, quick ordering, and payment processing workflows.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Visual Design</h3>
+                    <p>Developed a cyberpunk aesthetic with neon accents, dark backgrounds, and futuristic elements that match the VA-11 Hall-A universe.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Prototyping</h3>
+                    <p>Built interactive prototypes in Figma with complex interactions and transitions to simulate the actual user experience.</p>
+                </div>
+            </div>
+            
+            <div class="design-gallery">
+                <div class="design-item">
+                    <img src="images/journal/va_sketch.png" alt="Initial design sketches" data-lightbox="gallery">
+                    <h3>Initial Sketches</h3>
+                    <p>Early ideation exploring different layouts and workflows for the bar POS system.</p>
+                </div>
+                
+                <div class="design-item">
+                    <img src="images/journal/va_wireframe.png" alt="Wireframe designs" data-lightbox="gallery">
+                    <h3>Wireframes</h3>
+                    <p>Structural planning of the interface focusing on functionality and user flow.</p>
+                </div>
+                
+                <!-- <div class="design-item">
+                    <img src="images/journal/va_home.png" alt="Final design mockup" data-lightbox="gallery">
+                    <h3>Final Design</h3>
+                    <p>Completed interface with cyberpunk aesthetic and optimized bartender workflow.</p>
+                </div> -->
+            </div>
+            <h2>Final Design</h2>
+            <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slide active">
+              <img src="images/journal/va_home.png" alt="A dashboard that displays a navigation bar with 4 buttons, current order information, and a catalog of drinks with various filters that can be added to the order.">
+              <p style="text-align:center">A dashboard that displays a navigation bar with 4 buttons, current order information, and a catalog of drinks with various filters that can be added to the order.</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/Frame 36.png" alt="A popup window that displays a graphic of the BloomLight drink, along with various drink customization options.">
+              <p style="text-align:center">A popup window that displays a graphic of the BloomLight drink, along with various drink customization options.</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/va_tabs.png" alt="A dashboard that displays current and historical tabs being kept at the venue.">
+              <p style="text-align:center">A dashboard that displays current and historical tabs being kept at the venue.</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/va_viewtab.png" alt="An individual tab's information that allows for viewing and editing of the information.">
+              <p style="text-align:center">An individual tab's information that allows for viewing and editing of the information.</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/va_order.png" alt="A vertical-scrolling catalog that displays comprehensive order history">
+              <p style="text-align:center">A vertical-scrolling catalog that displays comprehensive order history.</p>
+            </div>
+            <div class="slide">
+              <img src="images/journal/va_popups.png" alt="4 different confirmation popups that may appear on click of various functions such as payment confirmation; select yes or no.">
+              <p style="text-align:center">Various confirmation popups that may appear on click of various functions.</p>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+            
+            <!-- Dot indicators -->
+            <div class="slideshow-controls">
+              <span class="slide-dot active"></span>
+              <span class="slide-dot"></span>
+              <span class="slide-dot"></span>
+              <span class="slide-dot"></span>
+              <span class="slide-dot"></span>
+              <span class="slide-dot"></span>
+            </div>
+        </div>
+        </section>
+        
+        <hr>
+        
+        <section class="key-features">
+            <h2>Key Features</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Tab Management</h3>
+                    <p>Quick creation and navigation between customer tabs with real-time order tracking and payment status.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3>Quick Order Panel</h3>
+                    <p>Customizable drink shortcuts and recent orders for rapid selection during busy periods.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3>Order history</h3>
+                    <p>Comprehensive order history is available for view straight from the navbar.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3>flexible Payment methods</h3>
+                    <p>Easy bill splitting for groups with multiple payment methods and itemized receipts; can put an order on hold; can cancel order.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3>Time & User Visibility</h3>
+                    <p>The current time and current logged in user is visible at all times at the top of the POS.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3>Cyberpunk Aesthetic</h3>
+                    <p>Visual design that matches the futuristic, neon-drenched world of VA-11 Hall-A.</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <section class="reflection">
+            <h2>Reflection</h2>
+            <p>This project challenged me to think deeply about specialized user needs and how interface design must adapt to different environments. While restaurant POS systems focus on table management, bar systems require tab-centric thinking and rapid drink ordering capabilities.</p>
+            
+            <p>The most valuable insight was understanding how bartenders' cognitive load increases during peak hours, requiring an interface that minimizes decision-making and maximizes muscle memory. The customizable quick-select panel became the cornerstone of this design.</p>
+            
+            <p>If I were to expand this project, I would conduct usability testing with actual bartenders to refine the workflows further. I'd also explore integration with mobile ordering systems and develop a companion app for customers to place orders directly from their seats.</p>
+            
+            <div class="highlight-text" style="font-size: 17px; margin-bottom: 7px; margin-top: 7px;">
+                    <a href="https://www.figma.com/proto/oMbxUU4P4WICpCtQDBUO0o/Gregorio_Caden-UI-SPRINT-5?node-id=4-1860&
+p=f&t=mR3uSDyAcWLv5KlJ-0&scaling=scale-down&content-scaling=fixed&page-id=4%3A1859" class="btn-link" target="_blank">View Interactive Prototype</a>
+                </div>
+        </section>
+    </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const radialBg = document.getElementById('radial-bg');
+      document.addEventListener('mousemove', (e) => {
+        radialBg.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, rgba(255,255,255,0.1), transparent 200px)`;
+      });
+    });
+    
+    // Lightbox functionality
+    document.addEventListener("DOMContentLoaded", function() {
+      const lightbox = document.createElement('div');
+      lightbox.className = 'lightbox';
+      lightbox.id = 'imageLightbox';
+      lightbox.innerHTML = `
+        <div class="lightbox-content">
+          <span class="close-lightbox">&times;</span>
+          <img class="lightbox-img" id="lightboxImage" src="" alt="">
+          <div class="lightbox-nav">
+            <button id="prevBtn">&lt;</button>
+            <button id="nextBtn">&gt;</button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(lightbox);
+      
+      const lightboxImg = document.getElementById('lightboxImage');
+      const closeBtn = document.querySelector('.close-lightbox');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      
+      let currentImageIndex = 0;
+      let images = [];
+      
+      // Get all lightbox images
+      const lightboxTriggers = document.querySelectorAll('[data-lightbox="gallery"]');
+      
+      // Create array of image sources
+      lightboxTriggers.forEach((img, index) => {
+        images.push({
+          src: img.src,
+          alt: img.alt
+        });
+        
+        // Add click event to each image
+        img.addEventListener('click', () => {
+          openLightbox(index);
+        });
+      });
+      
+      // Open lightbox with specific image
+      function openLightbox(index) {
+        currentImageIndex = index;
+        lightboxImg.src = images[index].src;
+        lightboxImg.alt = images[index].alt;
+        lightbox.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+      
+      // Close lightbox
+      closeBtn.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      });
+      
+      // Click outside image to close
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          lightbox.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+      
+      // Navigation between images
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentImageIndex].src;
+        lightboxImg.alt = images[currentImageIndex].alt;
+      });
+      
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        lightboxImg.src = images[currentImageIndex].src;
+        lightboxImg.alt = images[currentImageIndex].alt;
+      });
+      
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (lightbox.style.display === 'flex') {
+          if (e.key === 'Escape') {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+          } else if (e.key === 'ArrowLeft') {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            lightboxImg.src = images[currentImageIndex].src;
+            lightboxImg.alt = images[currentImageIndex].alt;
+          } else if (e.key === 'ArrowRight') {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            lightboxImg.src = images[currentImageIndex].src;
+            lightboxImg.alt = images[currentImageIndex].alt;
+          }
+        }
+      });
+    });
+    // Slideshow functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const slideshows = document.querySelectorAll('.slideshow-container');
+    
+    slideshows.forEach(slideshow => {
+      const slides = slideshow.querySelectorAll('.slide');
+      const dots = slideshow.querySelectorAll('.slide-dot');
+      let currentSlide = 0;
+      
+      // Initialize first slide
+      showSlide(currentSlide);
+      
+      // Dot click events
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          showSlide(currentSlide);
+        });
+      });
+      
+      // Next/previous buttons
+      const prevBtn = slideshow.querySelector('.prev');
+      const nextBtn = slideshow.querySelector('.next');
+      
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        });
+      }
+      
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        });
+      }
+      
+      function showSlide(n) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[n].classList.add('active');
+        dots[n].classList.add('active');
+      }
+    });
+  });
+  </script>
+</body>
+</html>
